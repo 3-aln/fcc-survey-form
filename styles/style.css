@@ -1,0 +1,32 @@
+.container {
+    padding: 20px;
+}
+
+.wide-text {
+    display: block;
+    width: 60%;
+    margin: 5px 0px 15px 0px;
+}
+
+select {
+    display: block;
+    margin: 5px 0px 20px 0px;
+}
+
+#radio-cb-prompt {
+    margin: 5px 0px 10px 0px;
+}
+.radio-cb-group {
+    margin: 0px 0px 15px 0px;
+}
+
+.radio-cb-group label {
+    display: block;
+}
+
+
+
+/* input[type="radio"] {
+    display: inline-block;
+} */
+
