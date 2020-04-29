@@ -5,27 +5,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="styles/style.css" rel="stylesheet">
-  <title>Survey Form</title>
+  <title>Survey Survey</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div class="container">
+    <div id="accent-strip"></div>
+
     <h1 id="title">Tell us a bit about this survey.</h1>
     <p id="description">This survey will help us better understand your experiences with this survey.
     </p>
 
     <form id="survey-form">
 
-      <label for="name" id="name-label">Name</label>
+      <label for="name" id="name-label" class="instruction-text">Name</label>
       <input id="name" class="wide-text" type="text" placeholder="Enter your name" required>
 
-      <label for="email" id="email-label">Email address</label>
+      <label for="email" id="email-label" class="instruction-text">Email address</label>
       <input id="email" class="wide-text" type="email" placeholder="Enter your email address" required>
 
-      <label for="number" id="number-label">Age</label>
+      <label for="number" id="number-label" class="instruction-text">Age</label>
       <input id="number" class="wide-text" type="number" placeholder="Enter your age (optional)" min="13" max="100">
 
-      <label for="dropdown">Of these options, which colour should the survey background have been?</label>
+      <label for="dropdown" class="instruction-text">Of these options, which colour should the survey background have
+        been?</label>
       <select id="dropdown">
         <option value="red">Red</option>
         <option value="orange">Orange</option>
@@ -39,9 +43,10 @@
         <option value="grey">Grey</option>
       </select>
 
-      <p id="radio-cb-prompt">Please select the extent to which you agree or disagree to the following
-        statement:<br><i>"This survey provides me with a fullfilling and enjoyable survey-taking experience."</i>
-      </p>
+      <p id="radio-cb-prompt" class="instruction-text">Please select the extent to which you agree or disagree with the
+        following
+        statement:<br></p>
+      <p id="quote"><i>"This survey provides me with a fullfilling and enjoyable survey-taking experience."</i></p>
       <div class="radio-cb-group">
         <label for="agree">
           <input id="agree" value="agree" type="radio" name="radio-choices">Agree
@@ -59,7 +64,7 @@
           <input id="disagree" value="disagree" type="radio" name="radio-choices">Disagree</label>
       </div>
 
-      <p id="radio-cb-prompt">This survey would, in an ideal world, contain more:</p>
+      <p id="radio-cb-prompt" class="instruction-text">This survey would, in an ideal world, contain more:</p>
       <div class="radio-cb-group">
         <label for="cb-dropdown"><input id="cb-dropdown" value="cb-dropdown" type="checkbox" name="cb-choices">Radio
           button
@@ -84,8 +89,12 @@
       <label for="textarea">Let us know if you have any comments or questions.</label>
       <textarea id="textarea" class="wide-text" rows="5" placeholder="Enter any comments or questions."></textarea>
 
-      <button type="submit">Submit</button>
+      <div id="center-button">
+        <button type="submit" id="submit">Submit</button>
+      </div>
     </form>
+
+    <div id="accent-strip-bottom"></div>
   </div>
 </body>
 

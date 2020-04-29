@@ -1,32 +1,90 @@
+body {
+    background-image: url("https://i.imgur.com/vHw1EF0.jpg?1");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: cover;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Manrope';
+    font-weight: 800;
+    font-size: 74px;
+}
+
+#description {
+    padding-bottom: 20px;
+}
+
 .container {
-    padding: 20px;
+    padding: 30px;
+    margin: auto;
+    max-width: 650px;
+    background-color: rgba(22, 22, 22, 0.575);
+    
+    color: white;
+    font-family: 'Manrope';
+    font-size: 18px;
+}
+
+#accent-strip {
+    background-color: #F50057;
+    width: 100%;
+    height: 6px;
+    margin-bottom: 20px;
+}
+/* .accent_color {
+    color: #F50057
+} */
+
+#accent-strip-bottom {
+    background-color: #F50057;
+    width: 100%;
+    height: 6px;
+    margin-top: 20px;
+}
+
+.instruction-text {
+    font-weight: 800;
 }
 
 .wide-text {
     display: block;
-    width: 60%;
-    margin: 5px 0px 15px 0px;
+    width: 100%;
+    margin: 10px 0px 35px 0px;
+    font-family: 'Manrope';
+    font-size: 18px;
 }
 
 select {
     display: block;
-    margin: 5px 0px 20px 0px;
+    margin: 5px 0px 40px 0px;
+    font-family: 'Manrope';
+    font-size: 18px;
+    width: 100px;
+    height: 30px;
 }
 
 #radio-cb-prompt {
     margin: 5px 0px 10px 0px;
 }
 .radio-cb-group {
-    margin: 0px 0px 15px 0px;
+    margin: 0px 0px 40px 0px;
 }
 
 .radio-cb-group label {
     display: block;
 }
 
+button {
+    font-family: 'Manrope';
+    font-size: 18px;
+    font-weight: 600;
+    width: 90px;
+    height: 35px;
+}
 
-
-/* input[type="radio"] {
-    display: inline-block;
-} */
-
+#center-button {
+    text-align: center;
+}
